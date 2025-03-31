@@ -1,0 +1,365 @@
+
+.menu{
+  display: flex;
+  position: relative;
+  height: 10%;
+  width: 10%;
+  cursor: pointer;
+  z-index: 1;
+  top: 0px;
+  left: -30px;
+}
+.menu.open {
+  visibility: hidden;
+  left: -100px;
+}
+.sidebar{
+  height: 100%;
+  width: 500px;
+  background-color: rgb(61, 55, 55);
+  position: absolute;
+  left: -2000px;
+  transition: 0.1s;
+  top: 0px;
+  z-index: 1;
+}
+.sidebar.open {
+  left: 0px; /* When isOpen is true */
+}
+.cross{
+  height: 80px;
+  width: 80px;
+  position: relative;
+  left: 415px;
+  cursor: pointer;
+  z-index: 1;
+  /* border:0.5px solid black; */
+  
+}
+.sections{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  top: -70px;
+  left: -80px;
+  white-space: nowrap;
+}
+.section0{
+  font-size: 40px;
+  padding: 50px;
+}
+.section1{
+  font-size: 40px;
+  padding: 50px;
+}
+.section2{
+  font-size: 40px;
+  padding: 50px;
+}
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+.mainlayer{
+  position: relative;
+  height: 1000px;
+  width: 800px;
+  border: 1px solid black;
+}
+.hrline{
+  position: relative;
+  border: 2px solid black;
+  width: 10px;
+
+}
+.toplayer{
+  display: flex;
+}
+.heading{
+  font-size: 50px;
+  position: relative;
+  left: 150px;
+}
+.box1{
+  height: 100px;
+  width: 500px;
+  border: 3px solid black;
+  font-size: 45px;
+  font-style: italic;
+  text-align: center;
+  position: relative;
+  top: -10px;
+}
+.box2{
+  height: 120px;
+  width: 600px;
+  border: 20px double black;
+  font-size: 55px;
+  font-weight: bold;
+  position: relative;
+  left: -25px;
+  top: -5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px 5px rgb(0,0,0,0.4);
+}
+.box3{
+  height: 100px;
+  width: 500px;
+  position: relative;
+  top: -10px;
+  border: 3px solid black;
+  font-size: 45px;
+  /* font-style: italic; */
+  text-align: center;
+}
+.periodsection{
+  position: relative;
+  left: 200px;
+  align-items: center;
+  height: 100px;
+  top: 0px;
+  left: 90px;
+  padding: 20px;
+  margin: 10px;
+  
+}
+.subhead{
+  font-size: 40px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.heading{
+  font-weight: bold;
+}
+
+.tab1{
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  position: absolute;
+}
+.tab1 .display{
+  visibility: visible;
+}
+.tab2{
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  position: absolute;
+}
+.tab3{
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  position: absolute;
+}
+.tab4{
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  position: absolute;
+}
+.tab5{
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  position: absolute;
+}
+.academic_images{
+  display: flex;
+  flex-direction: column;
+}
+.fulltable{
+  height: 100px;
+  width: 10px;
+  position: relative;
+  left: 30px;
+ }
+ .backbtn{
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  position: relative;
+  left: 100px;
+  top: 20px
+ }
+@media screen and (max-width:500px){
+  .menu{
+    display: flex;
+    position: relative;
+    height: 15%;
+    width: 15%;
+    cursor: pointer;
+    z-index: 1;
+    top: 0px;
+    left: 50px;
+  }
+  .menu.open {
+    visibility: hidden;
+    left: -100px;
+  }
+  .heading{
+    font-size: 40px;
+    position: relative;
+    left: 105px;
+  }
+  .sidebar{
+    height: 140%;
+    width: 500px;
+    background-color: rgb(61, 55, 55);
+    position: absolute;
+    left: -2000px;
+    transition: 0.1s;
+    top: 0px;
+    z-index: 1;
+  }
+  .sidebar.open {
+    left: 0px; /* When isOpen is true */
+  }
+  .box1{
+      height: 100px;
+      width: 380px;
+      border: 3px solid black;
+      font-size: 45px;
+      font-style: italic;
+      text-align: center;
+      position: relative;
+      top: -5px;
+  }
+  .box2{
+      height: 120px;
+      width: 450px;
+      border: 20px double black;
+      font-size: 45px;
+      font-weight: bold;
+      position: relative;
+      left: -25px;
+      top: -5px;
+      text-align: center;
+      box-shadow: 10px 10px 15px 5px rgb(0,0,0,0.4);
+  }
+  .box3{
+      height: 100px;
+      width: 380px;
+      position: relative;
+      top: -10px;
+      border: 3px solid black;
+      font-size: 45px;
+      text-align: center;
+  }
+  .mainhead{
+      font-size: 50px;
+      position: relative;
+      text-align: center;
+      left: 50px;
+      top: -10px;
+      font-weight: bold;
+      font-family: Helvetica;
+  }
+  .periodsection{
+      position: relative;
+      left: 200px;
+      align-items: center;
+      height: 400px;
+      width: 410px;
+      top: -10px;
+      left: 30px;
+      padding: 20px;
+      margin: 10px;
+      
+  }
+  .sections{
+      position: relative;
+      top: -70px;
+      left: -10px;
+      /* white-space: nowrap; */
+  }
+  .clock{
+      font-size: 60px;
+      position: relative;
+      top: -10px;
+      left: 55px;
+  }
+  .subhead{
+      font-size: 40px;
+      position: relative;
+      left: 55px;
+      white-space: nowrap;
+  }
+  #displaydate{
+      font-size: 30px;
+      position: relative;
+      left: -50px;
+      top: -0px;
+      border: 2px solid black;
+      height: 30px;
+      width: 160px;
+  }
+  #displayday{
+      font-size: 30px;
+      border: 2px solid black;
+      /* margin: 0 auto; */
+      /* display: block; */
+      position: relative;
+      top: -2px;
+      left: 20px;
+      height: 40px;
+      width: 90px;
+  }
+  .datesection{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -750px;
+      left: 415px;
+   }
+   .periodsection{
+    position: relative;
+    left: 45px;
+   }
+   .timetable{
+    height: 100px;
+    width: 10px;
+   }
+   .academic_images{
+    height: 300px;
+    width: 350px;
+   }
+   .fulltable{
+    height: 100px;
+    width: 10px;
+    position: relative;
+    left: 1000px;
+   }
+   .fulltable td{
+    padding: 10px 10px;
+    height: 80px;
+    font-size: 40px;
+    width: 0px;
+   }
+   .fulltimetableheading{
+    text-align: center;
+    position: relative;
+    left: 800px;
+    font-size: 50px;
+   }
+   .fulltimetableimg{
+    position: relative;
+    left: 1000px;
+    height: 1700px;
+    width: 1400px;
+   }
+   .todaytimetable{
+    height: 200px;
+   }
+   .todaytimetable td{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+   }
+}
